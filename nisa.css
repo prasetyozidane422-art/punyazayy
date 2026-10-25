@@ -1,0 +1,75 @@
+body {
+  margin: 0; min-height: 100vh; display: grid; place-items: center;
+  background: linear-gradient(135deg, hsl(206, 100%, 96%), #7ec8ff);
+  font-family: Arial, sans-serif;
+}
+
+#scene {
+  display: flex; flex-direction: column; align-items: center;
+  text-align: center; gap: 10px; padding: 12px;
+  transition: opacity .35s;
+}
+#scene.hilang { opacity: 0; }
+
+h1 {
+  margin: 0; color: #fff; max-width: 90vw;
+  font: 800 1.8rem 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0 3px 10px rgba(0,0,0,.15);
+}
+
+#foto {
+  width: 200px; height: 200px;
+  object-fit: cover; object-position: center 20%;
+  border-radius: 50%; border: 3px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,.2);
+  flex-shrink: 0;
+}
+#foto.kotak { width: 400px; height: 440px; border-radius: 16px; }
+
+#lirik {
+  margin: 0; max-width: 260px; padding: 12px 18px;
+  background: rgba(255,255,255,.6); color: #c2255c;
+  font-size: 1.1rem; border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.12);
+}
+#lirik:empty { display: none; }
+
+button {
+  width: 220px; height: 195px;
+  background: #ff7eb9; color: #fff; border: 0;
+  clip-path: url(#hati);
+  padding: 0 36px 32px;
+  font-size: 1.1rem; font-weight: bold; line-height: 1.35;
+  cursor: pointer; transition: transform .2s, background .2s;
+}
+button:hover { background: #ff5fa8; transform: scale(1.06); }
+
+#pemutar { display: none; flex-direction: column; align-items: center; gap: 8px; }
+#pemutar.tampil {
+  display: flex;
+  background: rgba(255,255,255,.35);
+  padding: 14px 20px; border-radius: 16px;
+}
+
+#jeda {
+  width: 44px; height: 44px; padding: 0;
+  border-radius: 50%; clip-path: none;
+  font-size: 1.2rem; line-height: 1;
+}
+
+#bar {
+  -webkit-appearance: none; appearance: none;
+  width: 190px; height: 6px; border-radius: 3px;
+  background: rgba(255,255,255,.5); outline: none; cursor: pointer;
+  clip-path: none; padding: 0;
+}
+#bar::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 16px; height: 16px;
+  border-radius: 50%; background: #ff5fa8; border: 2px solid #fff;
+}
+#bar::-moz-range-thumb {
+  width: 16px; height: 16px; border-radius: 50%;
+  background: #ff5fa8; border: 2px solid #fff;
+}
+small { color: #fff; font-size: .8rem; }
