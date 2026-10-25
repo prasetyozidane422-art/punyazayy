@@ -10,7 +10,7 @@ const alur = [
   { waktu: 0,    teks: "Beruntungnya aaakuuuu🐻",   foto: "cantik.jpeg" },
   { waktu: 5,    teks: "dimilikii nisaaaaaa❤️❤️", foto: "nisa1.jpeg" },
   { waktu: 11.5, teks: "NISA ADALAH BUKTIII✨", foto: "nisa2.jpeg" },
-  { waktu: 15.7, teks: "DARI CANTIKKNYAAA PARASSSS DAN HATIIII🩷", foto: "comel.jpeg" },
+  { waktu: 15.7, teks: "DARI CANTIKKNYAAA PARASSSS DAN HATIIII🩷", foto: "COMEL.jpeg" },
   { waktu: 20.5, teks: "kau jadi harmoniii saat ku bernyanyii🎵🎶", foto: "nisanyanyi.jpeg" },
   { waktu: 26.5, teks: "tentang terang dan gelapnya hidup ini🌃🌟", foto: "nisa3.jpeg" },
   { waktu: 31.5, teks: "kau lah bentuk terindahhhhhh✨🐹", foto: "nisa5.jpeg" },
